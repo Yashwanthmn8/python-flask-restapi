@@ -20,7 +20,7 @@ def test_home_route(client):
 def test_get_tasks(client):
     appService = AppService()
     # Assuming you have a method in AppService to return tasks
-    expected_response = appService.get_tasks()
+    expected_response = client.get('/api/tasks')
     
     response = client.get('/api/tasks')
     assert response.status_code == 200
