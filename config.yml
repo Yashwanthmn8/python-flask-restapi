@@ -16,6 +16,6 @@ jobs:
       - run:
           name: Run Tests
           command: |
-            pytest
+            pytests
 
         #Tests
