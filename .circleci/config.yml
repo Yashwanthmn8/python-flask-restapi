@@ -17,5 +17,10 @@ jobs:
           name: Run Tests
           command: |
             pytest
+workflows:
+  build_test_deploy:
+    jobs:
+      - build_test
+  
 
         #Tests
