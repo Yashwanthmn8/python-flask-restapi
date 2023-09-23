@@ -16,7 +16,7 @@ jobs:
       - run:
           name: Run Tests
           command: |
-            pytest test_app.py
+            pytest
 workflows:
   build_test_deploy:
     jobs:
